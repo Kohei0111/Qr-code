@@ -11,68 +11,33 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="(https://fonts.google.com/specimen/Outfit);" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Order summary card</title>
 
-    <title>Frontend Mentor | QR code component</title>
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        background-color: hsl(212, 45%, 89%);
-        font-family: "Outfit", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .card {
-        width: 280px;
-        padding: 16px;
-        border-radius: 19px;
-        background-color: white;
-      }
-
-      .card > img {
-        max-width: 100%;
-        border-radius: 10px;
-      }
-
-      .title {
-        text-align: center;
-        margin: 24px 10px;
-        font-weight: 700;
-        color: hsl(218, 44%, 22%);
-      }
-
-      .card > p {
-        text-align: center;
-        margin: 0 10px 20px;
-        color: hsl(220, 15%, 55%);
-        font-size: 15px;
-      }
-
-      @media screen and (min-width: 375px) {
-        .card {
-          width: 320px;
-        }
-      }
-    </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="card">
-      <img src="https://github.com/Kohei0111/frontendMentor/blob/main/image-qr-code.png?raw=true" alt="" />
-      <h3 class="title">Improve your front-end skills by building projects</h3>
-      <p class="scan">
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
+    <div class="container">
+      <img class="pic-hero" src="images/illustration-hero.svg" alt="" />
+      <h3 class="title">Order Summary</h3>
+      <p class="discription">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
       </p>
+      <div class="wrap-plan">
+        <article>
+          <img class="pic-music" src="images/icon-music.svg" alt="" />
+          <div>
+            <h4 class="plan">Annual Plan</h4>
+            <p class="price">$59.99/year</p>
+          </div>
+        </article>
+        <button class="btn-change">change</button>
+      </div>
+      <div class="buttons">
+        <button class="buy">Proceed to Payment</button>
+        <button class="cancel">Cancel Order</button>
+      </div>
     </div>
   </body>
 </html>
